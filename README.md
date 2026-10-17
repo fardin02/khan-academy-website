@@ -26,4 +26,4 @@ Hosted on Cloudflare.
 
 ## Developer
 
-Fardin
+----F----
