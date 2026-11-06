@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+HEAD
 /* =========================================================
    KHAN JAPANESE LANGUAGE & CAREER ACADEMY
    Premium navy + soft red responsive stylesheet
@@ -1142,7 +1142,7 @@ text-decoration: none;
 
 .course-info-box .text-link:hover {
 color: #b94752;
-=======
+}
 /* ==========================================
    KHAN JAPANESE LANGUAGE & CAREER ACADEMY
    Premium stylesheet
@@ -1415,9 +1415,89 @@ html[lang="ja"] .hero-ja{display:none}
   .wa-fab{bottom:14px}.wa-fab svg{width:25px;height:25px}
   #backToTop{bottom:68px}
 }
-@media (prefers-reduced-motion:reduce){
+@media (prefers-reduced-motion:reduce)
+{
   html{scroll-behavior:auto}
   *,*::before,*::after{transition:none!important;animation:none!important}
   .js .reveal{opacity:1;transform:none}
->>>>>>> 9ff4162 (Update polished website design)
+}
+
+/* Mobile text overflow fix */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+img, video {
+    max-width: 100%;
+    height: auto;
+}
+
+p, h1, h2, h3, a {
+    overflow-wrap: anywhere;
+}
+
+@media (max-width: 768px) {
+    .container,
+    .hero,
+    .hero-content {
+        max-width: 100%;
+        min-width: 0;
+    }
+}
+/* Global Mobile Overflow Fix */
+@media (max-width: 768px) {
+
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: clip;
+    }
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    img,
+    video,
+    iframe {
+        max-width: 100%;
+    }
+
+    .container,
+    section,
+    header,
+    footer {
+        max-width: 100%;
+    }
+
+    h1,
+    h2,
+    h3,
+    p,
+    a,
+    span {
+        overflow-wrap: anywhere;
+        word-break: normal;
+    }
+}
+/* Course Details - Improve Text Visibility */
+.course-details li {
+    color: #ffffff !important;
+    opacity: 1 !important;
+}
+
+.course-info-box h4 {
+    color: #ffffff !important;
+}
+
+.course-details.dark-details li {
+    color: #222222 !important;
 }
