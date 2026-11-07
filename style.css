@@ -1501,3 +1501,21 @@ p, h1, h2, h3, a {
 .course-details.dark-details li {
     color: #222222 !important;
 }
+/* FAQ Mobile Layout Fix */
+@media (max-width: 768px) {
+
+    .faq-item summary {
+        display: grid !important;
+        grid-template-columns: minmax(0, 1fr) 30px;
+        align-items: center;
+        gap: 12px;
+        white-space: normal !important;
+    }
+
+    .faq-item summary::after {
+        grid-column: 2;
+        grid-row: 1;
+        flex-shrink: 0;
+        margin: 0;
+    }
+}
